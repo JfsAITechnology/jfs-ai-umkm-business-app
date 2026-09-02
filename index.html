@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JFS AI UMKM — Fibo Laundry</title>
+<meta name="description" content="JFS AI UMKM Business App — tenant dashboard Fibo Laundry">
+<style>
+:root{--bg:#f5f7fb;--panel:#fff;--text:#172033;--muted:#6b7280;--line:#e6e9f0;--brand:#111827;--accent:#2563eb;--success:#16a34a;--warning:#d97706;--danger:#dc2626;--radius:16px;--shadow:0 8px 28px rgba(15,23,42,.06)}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text)}button{font:inherit;cursor:pointer}.app{display:flex;min-height:100vh}.sidebar{width:250px;background:#101828;color:#fff;padding:18px 14px;position:fixed;inset:0 auto 0 0;z-index:10}.brand{display:flex;align-items:center;gap:10px;padding:6px 8px 20px;border-bottom:1px solid rgba(255,255,255,.1)}.brand img{width:38px;height:38px;object-fit:contain;background:#fff;border-radius:10px}.brand strong{font-size:16px}.brand small{display:block;color:#98a2b3;font-size:11px;margin-top:2px}.nav{margin-top:18px}.nav button{width:100%;border:0;background:transparent;color:#c9d2df;text-align:left;padding:11px 12px;border-radius:10px;margin:2px 0}.nav button:hover,.nav button.active{background:#1d2939;color:#fff}.nav .section{font-size:10px;color:#667085;text-transform:uppercase;letter-spacing:.1em;padding:16px 12px 7px}.main{margin-left:250px;width:calc(100% - 250px)}.top{height:74px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 28px;position:sticky;top:0;z-index:5}.identity{display:flex;align-items:center;gap:12px}.identity .divider{color:#c7ccd6}.tenant{display:flex;align-items:center;gap:9px}.tenant-logo{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;background:#eef2ff;font-size:20px}.tenant strong{font-size:14px}.tenant small{display:block;color:var(--muted);font-size:11px}.owner{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:13px}.avatar{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:#e5e7eb;color:#374151;font-weight:700}.content{padding:28px}.heading{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:22px}.heading h1{margin:0;font-size:25px}.heading p{margin:6px 0 0;color:var(--muted);font-size:14px}.actions{display:flex;gap:9px}.btn{border:1px solid var(--line);background:#fff;padding:10px 14px;border-radius:10px;color:#344054}.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px}.metric{display:flex;justify-content:space-between;align-items:flex-start}.metric .icon{width:38px;height:38px;border-radius:11px;background:#f2f4f7;display:grid;place-items:center}.metric label{font-size:12px;color:var(--muted)}.metric h2{margin:7px 0 3px;font-size:25px}.trend{font-size:12px;color:var(--success)}.layout{display:grid;grid-template-columns:1.65fr 1fr;gap:16px;margin-top:16px}.card-title{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}.card-title h3{font-size:15px;margin:0}.link{border:0;background:transparent;color:var(--accent);font-size:12px}.order{display:flex;align-items:center;justify-content:space-between;padding:13px 0;border-top:1px solid var(--line)}.order:first-of-type{border-top:0}.order-main{display:flex;align-items:center;gap:11px}.order-icon{width:38px;height:38px;border-radius:10px;background:#f2f4f7;display:grid;place-items:center}.order strong{font-size:13px}.order small{display:block;color:var(--muted);margin-top:3px}.status{padding:5px 9px;border-radius:999px;font-size:11px;font-weight:600}.waiting{background:#fff7ed;color:var(--warning)}.process{background:#eff6ff;color:var(--accent)}.done{background:#ecfdf3;color:var(--success)}.low{background:#fef2f2;color:var(--danger)}.quick{display:grid;grid-template-columns:1fr 1fr;gap:10px}.quick button{border:1px solid var(--line);background:#fff;padding:13px;border-radius:12px;text-align:left}.quick strong{font-size:13px;display:block}.quick span{font-size:11px;color:var(--muted)}.ai{margin-top:16px;background:#101828;color:#fff;border-radius:var(--radius);padding:18px}.ai h3{margin:0 0 5px;font-size:15px}.ai p{color:#c9d2df;font-size:12px;line-height:1.5;margin:0 0 14px}.ai button{border:0;background:#fff;color:#111827;padding:9px 12px;border-radius:9px;font-size:12px}.footer-note{margin-top:20px;color:#98a2b3;font-size:11px;text-align:center}@media(max-width:1000px){.grid{grid-template-columns:repeat(2,1fr)}.layout{grid-template-columns:1fr}.sidebar{width:215px}.main{margin-left:215px;width:calc(100% - 215px)}}@media(max-width:700px){.sidebar{display:none}.main{margin-left:0;width:100%}.top{padding:0 16px}.content{padding:18px}.grid{grid-template-columns:1fr 1fr}.owner span{display:none}.heading{gap:12px}.actions .btn:not(.primary){display:none}}@media(max-width:480px){.grid{grid-template-columns:1fr}.heading h1{font-size:21px}.identity>strong{display:none}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="sidebar">
+  <div class="brand"><img src="https://i.ibb.co.com/84gBH9s5/image-358cd592-removebg-preview.png" alt="JFS AI"><div><strong>JFS AI</strong><small>UMKM Business App</small></div></div>
+  <nav class="nav">
+    <button class="active">▦ &nbsp; Dashboard</button>
+    <div class="section">Bisnis</div>
+    <button>◈ &nbsp; Profil Bisnis</button><button>▣ &nbsp; Produk & Layanan</button><button>◫ &nbsp; Stok</button><button>▤ &nbsp; Katalog</button>
+    <div class="section">Operasional</div>
+    <button>♙ &nbsp; Pelanggan</button><button>⌁ &nbsp; Pesanan</button><button>◷ &nbsp; Booking</button>
+    <div class="section">AI & Integrasi</div>
+    <button>✦ &nbsp; AI Customer Service</button><button>◉ &nbsp; WhatsApp</button><button>⚙ &nbsp; Pengaturan</button>
+  </nav>
+</aside>
+<main class="main">
+<header class="top">
+  <div class="identity"><strong>JFS AI</strong><span class="divider">|</span><div class="tenant"><div class="tenant-logo">🧺</div><div><strong>Fibo Laundry</strong><small>Tenant UMKM</small></div></div></div>
+  <div class="owner"><span>Owner / Admin</span><div class="avatar">J</div></div>
+</header>
+<section class="content">
+  <div class="heading"><div><h1>Dashboard</h1><p>Ringkasan bisnis Fibo Laundry hari ini.</p></div><div class="actions"><button class="btn">＋ Tambah</button><button class="btn primary">▣ Lihat Katalog</button></div></div>
+  <div class="grid">
+    <div class="card metric"><div><label>Penjualan Hari Ini</label><h2>Rp 485.000</h2><span class="trend">↑ 12,4% vs kemarin</span></div><div class="icon">💰</div></div>
+    <div class="card metric"><div><label>Pesanan Baru</label><h2>18</h2><span class="trend">↑ 4 pesanan</span></div><div class="icon">🧾</div></div>
+    <div class="card metric"><div><label>Pelanggan</label><h2>326</h2><span class="trend">↑ 9 baru bulan ini</span></div><div class="icon">👥</div></div>
+    <div class="card metric"><div><label>Stok Perlu Dicek</label><h2>3</h2><span class="trend" style="color:var(--warning)">Perlu perhatian</span></div><div class="icon">📦</div></div>
+  </div>
+  <div class="layout">
+    <div class="card"><div class="card-title"><h3>Pesanan Terbaru</h3><button class="link">Lihat semua →</button></div>
+      <div class="order"><div class="order-main"><div class="order-icon">🧺</div><div><strong>ORD-0018 · Andi</strong><small>Cuci Setrika · 5 kg · Rp 50.000</small></div></div><span class="status waiting">Menunggu</span></div>
+      <div class="order"><div class="order-main"><div class="order-icon">🧺</div><div><strong>ORD-0017 · Sari</strong><small>Cuci Kering · 3 kg · Rp 24.000</small></div></div><span class="status process">Diproses</span></div>
+      <div class="order"><div class="order-main"><div class="order-icon">🧺</div><div><strong>ORD-0016 · Budi</strong><small>Express · 4 kg · Rp 60.000</small></div></div><span class="status done">Selesai</span></div>
+    </div>
+    <div class="card"><div class="card-title"><h3>Akses Cepat</h3></div><div class="quick"><button><strong>＋ Produk</strong><span>Tambah produk/layanan</span></button><button><strong>📦 Stok</strong><span>Kelola persediaan</span></button><button><strong>🧾 Pesanan</strong><span>Konfirmasi order</span></button><button><strong>👥 Pelanggan</strong><span>Data pelanggan</span></button></div></div>
+  </div>
+  <div class="ai"><h3>✦ AI Customer Service</h3><p>AI siap membantu menjawab pertanyaan pelanggan berdasarkan data bisnis Fibo Laundry. Harga, layanan, jam buka, lokasi, dan status pesanan harus berasal dari data tenant.</p><button onclick="alert('Modul AI Customer Service akan dihubungkan ke Supabase + AI pada tahap integrasi berikutnya.')">Buka AI Customer Service →</button></div>
+  <div class="footer-note">JFS AI UMKM Business App · Multi-tenant ready · Prototype dashboard v1</div>
+</section>
+</main>
+</div>
+</body>
+</html>
